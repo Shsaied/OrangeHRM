@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NegativeScenarios">
+    <test name="Test Login functionality with invalid user name and valid password">
+        <parameter name="browser" value=""/>
+        <classes>
+           <class name="testcases.TC01_login">
+               <methods>
+                   <include name="loginWithInvalidUser_N"/>
+               </methods>
+           </class>
+        </classes>
+    </test>
+    <test name="Test login functionality with valid user name and invalid password">
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="testcases.TC01_login">
+                <methods>
+                    <include name="loginWithInvalidPassword_N"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test login functionality with invalid credential">
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="testcases.TC01_login">
+                <methods>
+                    <include name="loginWithInvalidCredential_N"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+ </suite>
+
+

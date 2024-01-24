@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PositiveScenarios">
+   <test name="Login">
+    <parameter name="browser" value=""/>
+    <classes>
+        <class name="testcases.TC01_login">
+            <methods>
+                <include name="loginWithValidUser_P"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+    <test name="Add Admin User">
+        <parameter name="browser" value="">
+            <classes>
+                <class name="testcases.TC03_AddNewAdminUser">
+                    <methods>
+                        <include name="createNewAdminUser_P"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="Search on admin User">
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="testcases.TC02_SearchOnSystemUser">
+                <methods>
+                    <include name="searchOnSystemUser_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Create new Employee">
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="testcases.TC04_AddNewEmployee">
+                <methods>
+                    <include name="createNewEmployee_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

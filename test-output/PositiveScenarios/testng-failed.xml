@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PositiveScenarios]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Search on admin User(failed)">
+    <parameter name="browser" value=""/>
+    <classes>
+      <class name="testcases.TC03_AddNewAdminUser">
+        <methods>
+          <include name="createNewAdminUser_P"/>
+          <include name="getResult"/>
+          <include name="defineSuiteElements"/>
+          <include name="close"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.TC03_AddNewAdminUser -->
+    </classes>
+  </test> <!-- Search on admin User(failed) -->
+</suite> <!-- Failed suite [PositiveScenarios] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PositiveScenarios">
+
+    <test name="Search on admin User">
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="testcases.TC03_AddNewAdminUser">
+                <methods>
+                    <include name="createNewAdminUser_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
